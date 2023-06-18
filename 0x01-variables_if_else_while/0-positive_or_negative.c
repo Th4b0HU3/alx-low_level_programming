@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - This program will assign a random number to the variable n
+ * main - Entry point
  *
+ * Description: 'A program that will check if a number is positive or negative'
  * Return: 0 (success)
  */
 int main(void)
@@ -16,7 +17,7 @@ int main(void)
 
 if (n > 0)
 printf("%d is positive\n", n);
-if else(n == 0)
+else if(n == 0)
 printf("%d is zero\n", n);
 else
 printf("%d is negative\n", n);
