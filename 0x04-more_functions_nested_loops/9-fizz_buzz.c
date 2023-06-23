@@ -8,21 +8,19 @@
  */
 int main(void)
 {
-	int i;
+	int start = 1, end = 100;
 
-	for (i = 1; i <= 100; i++)
+	while (start <= 100)
 	{
-		if (i % 15 == 0)
-			printf("FizzBuzz");
-		if (i % 3 == 0)
+		if (start % 3 == 0)
 			printf("Fizz");
-		if (i % 5 == 0)
+		if (start % 5 == 0)
 			printf("Buzz");
-		else
-			printf("%i", i);
-		if (i < 100)
-			printf(" ");
+		if (start % 3 != 0 && start % 5 != 0)
+			printf("%d", start);
+
+		putchar(start == end ? '\n' : ' ');
+		start++;
 	}
-	printf("\n");
 	return (0);
 }
