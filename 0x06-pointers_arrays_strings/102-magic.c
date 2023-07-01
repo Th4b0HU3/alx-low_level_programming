@@ -1,6 +1,10 @@
 #include <stdio.h>
+/**
+ * main - Entry point
+ * Return: void
+ */
 
-void main(void)
+int main(void)
 {
 int n;
 int a[5];
